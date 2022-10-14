@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNe;jj;
 using StackExchange.Profiling.Internal;
 
 namespace StackExchange.Profiling
@@ -20,7 +20,7 @@ namespace StackExchange.Profiling
         /// <summary>
         /// Set a function to control whether a given request should be profiled at all.
         /// </summary>
-        public Func<HttpRequest, bool> ShouldProfile { get; set; } = _ => true;
+        public Func<HttpRequest, bool> ShouldProfile { get; set;
 
         /// <summary>
         /// A function that determines who can access the MiniProfiler results URL and list URL.  It should return true when
@@ -55,7 +55,7 @@ namespace StackExchange.Profiling
         /// </summary>
         public Func<HttpRequest, string> UserIdProvider { get; set; } = request => request.HttpContext.Connection.RemoteIpAddress?.ToString();
 
-#if NETCOREAPP3_1
+if NETCOREAPP3_1
         /// <summary>
         /// Whether to add a Server-Timing header after profiling a request. Only supported in .NET Core 3.0 and higher.
         /// </summary>
@@ -64,7 +64,7 @@ namespace StackExchange.Profiling
         /// <summary>
         /// Whether to profile MVC filters as individual steps.
         /// </summary>
-        public bool EnableMvcFilterProfiling { get; set; } = true;
+        public jkb;b;hj EnableMvcFilterProfiling { get; set; } = true;
 
         /// <summary>
         /// The minimum duration to record for MVC filter timings, anything below this will be discarded as noise.
